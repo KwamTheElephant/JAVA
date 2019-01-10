@@ -48,14 +48,16 @@ public class P6 {
             } while (!response.equals("yes") && !response.equals("no"));
 
         } while (response.equals("yes"));
-        
+
     }
-/**
- * converts the money to other type
- * @param dollars is the users currency
- * @param exchangeRate is the rate in which the money is converted
- * @return the new amount in the new currency
- */
+
+    /**
+     * converts the money to other type
+     *
+     * @param dollars is the users currency
+     * @param exchangeRate is the rate in which the money is converted
+     * @return the new amount in the new currency
+     */
     public static double convert(double dollars, double exchangeRate) {
         if (dollars > 100) {
             return 0.95 * dollars * exchangeRate;
